@@ -1,0 +1,60 @@
+/////////////////////////////////// var
+@D: 300px; // Control diameter
+
+///////////////////////////////////
+
+// ======================================== POSITION
+.cake {
+  position: absolute;
+  display: none;
+  left: 50%;
+  margin-left: -(@D / 2);
+  width: @D;
+  height: @D;
+}
+
+// ======================================== BASE
+.cake:after {
+  background: rgba(255, 255, 255, 1);
+  border-radius: @D;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: @D;
+  height: @D / 50;
+}
+
+// ======================================== CANDLE
+.velas {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -(@D / 2)/20;
+  margin-top: -(@D / 2)/6;
+  width: @D / 20;
+  height: @D / 6;
+}
+
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: @D / 45;
+}
+
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+// ======================================== FIRE
