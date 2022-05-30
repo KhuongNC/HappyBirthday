@@ -1,451 +1,452 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #000;
-  transition: background-color linear 5s;
-  overflow-x: hidden;
-}
-
-.container {
-  display: none;
-}
-
-.peach {
-  background-color: #ffdab9;
-}
-
-.peach-after {
-  animation: peach_alive linear 8s infinite;
-}
-
-@keyframes peach_alive {
-  0% {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    transition: background-color linear 5s;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    display: none;
+  }
+  
+  .peach {
     background-color: #ffdab9;
   }
-  25% {
-    background-color: #ffe4b5;
+  
+  .peach-after {
+    animation: peach_alive linear 8s infinite;
   }
-  50% {
-    background-color: #ffdab9;
+  
+  @keyframes peach_alive {
+    0% {
+      background-color: #ffdab9;
+    }
+    25% {
+      background-color: #ffe4b5;
+    }
+    50% {
+      background-color: #ffdab9;
+    }
+    75% {
+      background-color: #ffefd5;
+    }
+    100% {
+      background-color: #ffdab9;
+    }
   }
-  75% {
-    background-color: #ffefd5;
+  
+  .bulb {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-repeat: no-repeat no-repeat;
+    background-position: center 0;
+    background-size: 50px 50px;
   }
-  100% {
-    background-color: #ffdab9;
+  
+  .bulb-holder {
+    height: 70px;
   }
-}
-
-.bulb {
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  background-repeat: no-repeat no-repeat;
-  background-position: center 0;
-  background-size: 50px 50px;
-}
-
-.bulb-holder {
-  height: 70px;
-}
-
-.bulb-glow-yellow {
-  background-image: url(/Image/LightBulb/bulb_yellow.png);
-  animation: bulb_glow_yellow linear 5s;
-}
-
-@keyframes bulb_glow_yellow {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
-    opacity: 0;
+  
+  .bulb-glow-yellow {
+    background-image: url(https://i.postimg.cc/Qtr6jBG0/bulb-yellow.png);
+    animation: bulb_glow_yellow linear 5s;
   }
-  50% {
-    opacity: 1;
+  
+  @keyframes bulb_glow_yellow {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/Qtr6jBG0/bulb-yellow.png);
+      opacity: 1;
+    }
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb_yellow.png);
-    opacity: 1;
+  
+  .bulb-glow-red {
+    background-image: url(https://i.postimg.cc/0NSWgY3z/bulb-red.png);
+    animation: bulb_glow_red linear 5s;
   }
-}
-
-.bulb-glow-red {
-  background-image: url(/Image/LightBulb/bulb_red.png);
-  animation: bulb_glow_red linear 5s;
-}
-
-@keyframes bulb_glow_red {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
-    opacity: 0;
+  
+  @keyframes bulb_glow_red {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/0NSWgY3z/bulb-red.png);
+      opacity: 1;
+    }
   }
-  50% {
-    opacity: 1;
+  
+  .bulb-glow-blue {
+    background-image: url(https://i.postimg.cc/RFHNLFW5/bulb-blue.png);
+    animation: bulb_glow_blue linear 5s;
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb_red.png);
-    opacity: 1;
+  
+  @keyframes bulb_glow_blue {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/RFHNLFW5/bulb-blue.png);
+      opacity: 1;
+    }
   }
-}
-
-.bulb-glow-blue {
-  background-image: url(/Image/LightBulb/bulb_blue.png);
-  animation: bulb_glow_blue linear 5s;
-}
-
-@keyframes bulb_glow_blue {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
-    opacity: 0;
+  
+  .bulb-glow-green {
+    background-image: url(https://i.postimg.cc/TYkHnYg3/bulb-green.png);
+    animation: bulb_glow_green linear 5s;
   }
-  50% {
-    opacity: 1;
+  
+  @keyframes bulb_glow_green {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/TYkHnYg3/bulb-green.png);
+      opacity: 1;
+    }
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb_blue.png);
-    opacity: 1;
+  
+  .bulb-glow-pink {
+    background-image: url(https://i.postimg.cc/Sx3TtTZ0/bulb-pink.png);
+    animation: bulb_glow_pink linear 5s;
   }
-}
-
-.bulb-glow-green {
-  background-image: url(/Image/LightBulb/bulb_green.png);
-  animation: bulb_glow_green linear 5s;
-}
-
-@keyframes bulb_glow_green {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
-    opacity: 0;
+  
+  @keyframes bulb_glow_pink {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/Sx3TtTZ0/bulb-pink.png);
+      opacity: 1;
+    }
   }
-  50% {
-    opacity: 1;
+  
+  .bulb-glow-orange {
+    background-image: url(https://i.postimg.cc/HkVvzD94/bulb-orange.png);
+    animation: bulb_glow_orange linear 5s;
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb_green.png);
-    opacity: 1;
+  
+  @keyframes bulb_glow_orange {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/HkVvzD94/bulb-orange.png);
+      opacity: 1;
+    }
   }
-}
-
-.bulb-glow-pink {
-  background-image: url(/Image/LightBulb/bulb_pink.png);
-  animation: bulb_glow_pink linear 5s;
-}
-
-@keyframes bulb_glow_pink {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
-    opacity: 0;
+  
+  /* After music */
+  .bulb-glow-yellow-after {
+    background-image: url(https://i.postimg.cc/HkVvzD94/bulb-orange.png);
+    animation: bulb_glow_yellow_after linear 1s infinite;
   }
-  50% {
-    opacity: 1;
+  
+  @keyframes bulb_glow_yellow_after {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
+    50% {
+      background-image: url(https://i.postimg.cc/HkVvzD94/bulb-orange.png);
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb_pink.png);
-    opacity: 1;
+  
+  .bulb-glow-red-after {
+    background-image: url(https://i.postimg.cc/0NSWgY3z/bulb-red.png);
+    animation: bulb_glow_red_after linear 1.2s infinite;
   }
-}
-
-.bulb-glow-orange {
-  background-image: url(/Image/LightBulb/bulb_orange.png);
-  animation: bulb_glow_orange linear 5s;
-}
-
-@keyframes bulb_glow_orange {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
-    opacity: 0;
+  
+  @keyframes bulb_glow_red_after {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
+    50% {
+      background-image: url(https://i.postimg.cc/0NSWgY3z/bulb-red.png);
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
   }
-  50% {
-    opacity: 1;
+  
+  .bulb-glow-blue-after {
+    background-image: url(https://i.postimg.cc/RFHNLFW5/bulb-blue.png);
+    animation: bulb_glow_blue_after linear 1.4s infinite;
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb_orange.png);
-    opacity: 1;
+  
+  @keyframes bulb_glow_blue_after {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
+    50% {
+      background-image: url(https://i.postimg.cc/RFHNLFW5/bulb-blue.png);
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
   }
-}
-
-/* After music */
-.bulb-glow-yellow-after {
-  background-image: url(/Image/LightBulb/bulb_yellow.png);
-  animation: bulb_glow_yellow_after linear 1s infinite;
-}
-
-@keyframes bulb_glow_yellow_after {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  .bulb-glow-green-after {
+    background-image: url(https://i.postimg.cc/TYkHnYg3/bulb-green.png);
+    animation: bulb_glow_green_after linear 1.8s infinite;
   }
-  50% {
-    background-image: url(/Image/LightBulb/bulb_yellow.png);
+  
+  @keyframes bulb_glow_green_after {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
+    50% {
+      background-image: url(https://i.postimg.cc/TYkHnYg3/bulb-green.png);
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  .bulb-glow-pink-after {
+    background-image: url(https://i.postimg.cc/Sx3TtTZ0/bulb-pink.png);
+    animation: bulb_glow_pink_after linear 2s infinite;
   }
-}
-
-.bulb-glow-red-after {
-  background-image: url(/Image/LightBulb/bulb_red.png);
-  animation: bulb_glow_red_after linear 1.2s infinite;
-}
-
-@keyframes bulb_glow_red_after {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  @keyframes bulb_glow_pink_after {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
+    50% {
+      background-image: url(https://i.postimg.cc/Sx3TtTZ0/bulb-pink.png);
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
   }
-  50% {
-    background-image: url(/Image/LightBulb/bulb_red.png);
+  
+  .bulb-glow-orange-after {
+    background-image: url(https://i.postimg.cc/HkVvzD94/bulb-orange.png);
+    animation: bulb_glow_orange_after linear 2.2s infinite;
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  @keyframes bulb_glow_orange_after {
+    0% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
+    50% {
+      background-image: url(https://i.postimg.cc/HkVvzD94/bulb-orange.png);
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/bNYBG2G5/bulb.png);
+    }
   }
-}
-
-.bulb-glow-blue-after {
-  background-image: url(/Image/LightBulb/bulb_blue.png);
-  animation: bulb_glow_blue_after linear 1.4s infinite;
-}
-
-@keyframes bulb_glow_blue_after {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  audio {
+    display: none;
   }
-  50% {
-    background-image: url(/Image/LightBulb/bulb_blue.png);
+  
+  .bannar {
+    max-width: 100%;
+    transform: translate(0, -500px);
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  .bannar-come {
+    animation: bannar_come linear 6s;
+    transform: translate(0, 0);
   }
-}
-
-.bulb-glow-green-after {
-  background-image: url(/Image/LightBulb/bulb_green.png);
-  animation: bulb_glow_green_after linear 1.8s infinite;
-}
-
-@keyframes bulb_glow_green_after {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  @keyframes bannar_come {
+    0% {
+      transform: translate(0, -1000px);
+    }
+    33% {
+      transform: translate(0, 0) rotate(10deg);
+    }
+    66% {
+      transform: translate(0, 100px) rotate(-10deg);
+    }
+    100% {
+      transform: translate(0, -1000px);
+    }
   }
-  50% {
-    background-image: url(/Image/LightBulb/bulb_green.png);
+  
+  .balloons {
+    position: fixed;
+    bottom: -200px;
+    opacity: 0.6;
+    z-index: 99;
+    width: 100px;
+    height: 183px;
+    background-repeat: no-repeat no-repeat;
+    background-size: 100px 183px;
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  .balloons h2 {
+    text-transform: uppercase;
+    font-family: "Signika", sans-serif;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px #fff;
+    color: #bf4136;
+    display: none;
   }
-}
-
-.bulb-glow-pink-after {
-  background-image: url(/Image/LightBulb/bulb_pink.png);
-  animation: bulb_glow_pink_after linear 2s infinite;
-}
-
-@keyframes bulb_glow_pink_after {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  #b1,
+  #b11 {
+    background-image: url(https://i.postimg.cc/wMvd2RGw/b1.png);
   }
-  50% {
-    background-image: url(/Image/LightBulb/bulb_pink.png);
+  
+  #b2,
+  #b22 {
+    background-image: url(https://i.postimg.cc/Bv09yVzL/b2.png);
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  #b3,
+  #b33 {
+    background-image: url(https://i.postimg.cc/66msw3SN/b3.png);
   }
-}
-
-.bulb-glow-orange-after {
-  background-image: url(/Image/LightBulb/bulb_orange.png);
-  animation: bulb_glow_orange_after linear 2.2s infinite;
-}
-
-@keyframes bulb_glow_orange_after {
-  0% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  #b4,
+  #b44 {
+    background-image: url(https://i.postimg.cc/d0BXftdp/b4.png);
   }
-  50% {
-    background-image: url(/Image/LightBulb/bulb_orange.png);
+  
+  #b5,
+  #b55 {
+    background-image: url(https://i.postimg.cc/65vPXhnd/b5.png);
   }
-  100% {
-    background-image: url(/Image/LightBulb/bulb.png);
+  
+  #b6,
+  #b66 {
+    background-image: url(https://i.postimg.cc/W3z9fmsq/b6.png);
   }
-}
-
-audio {
-  display: none;
-}
-
-.bannar {
-  max-width: 100%;
-  transform: translate(0, -500px);
-}
-
-.bannar-come {
-  animation: bannar_come linear 6s;
-  transform: translate(0, 0);
-}
-
-@keyframes bannar_come {
-  0% {
-    transform: translate(0, -1000px);
+  
+  #b7,
+  #b77 {
+    background-image: url(https://i.postimg.cc/15DZHSCh/b7.png);
   }
-  33% {
-    transform: translate(0, 0) rotate(10deg);
-  }
-  66% {
-    transform: translate(0, 100px) rotate(-10deg);
-  }
-  100% {
-    transform: translate(0, -1000px);
-  }
-}
-
-.balloons {
-  position: fixed;
-  bottom: -200px;
-  opacity: 0.6;
-  z-index: 99;
-  width: 100px;
-  height: 183px;
-  background-repeat: no-repeat no-repeat;
-  background-size: 100px 183px;
-}
-
-.balloons h2 {
-  text-transform: uppercase;
-  font-family: "Signika", sans-serif;
-  font-size: 50px;
-  text-shadow: 5px 5px 5px #fff;
-  color: #bf4136;
-  display: none;
-}
-
-#b1,
-#b11 {
-  background-image: url("image/Bubble/b1.png");
-}
-
-#b2,
-#b22 {
-  background-image: url("image/Bubble/b2.png");
-}
-
-#b3,
-#b33 {
-  background-image: url("image/Bubble/b3.png");
-}
-
-#b4,
-#b44 {
-  background-image: url("image/Bubble/b4.png");
-}
-
-#b5,
-#b55 {
-  background-image: url("image/Bubble/b5.png");
-}
-
-#b6,
-#b66 {
-  background-image: url("image/Bubble/b6.png");
-}
-
-#b7,
-#b77 {
-  background-image: url("image/Bubble/b7.png");
-}
-
-.balloons-rotate-behaviour-one {
-  animation: balloons_rotate_one linear 10s infinite;
-  transform: rotate(30deg);
-}
-
-@keyframes balloons_rotate_one {
-  0% {
+  
+  .balloons-rotate-behaviour-one {
+    animation: balloons_rotate_one linear 10s infinite;
     transform: rotate(30deg);
   }
-  50% {
-    transform: rotate(-30deg);
+  
+  @keyframes balloons_rotate_one {
+    0% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(30deg);
+    }
   }
-  100% {
-    transform: rotate(30deg);
-  }
-}
-
-.balloons-rotate-behaviour-two {
-  animation: balloons_rotate_two linear 10s infinite;
-  transform: rotate(-20deg);
-}
-
-@keyframes balloons_rotate_two {
-  0% {
-    transform: rotate(20deg);
-  }
-  50% {
+  
+  .balloons-rotate-behaviour-two {
+    animation: balloons_rotate_two linear 10s infinite;
     transform: rotate(-20deg);
   }
-  100% {
-    transform: rotate(20deg);
+  
+  @keyframes balloons_rotate_two {
+    0% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(20deg);
+    }
   }
-}
-
-.balloon-border {
-  position: fixed;
-  top: 100%;
-  opacity: 0.5;
-  z-index: 9999;
-}
-
-.control-panel {
-  position: fixed;
-  bottom: 0;
-  padding: 10px 0 10px 0;
-}
-
-#play,
-#bannar_coming,
-#balloons_flying,
-#cake_fadein,
-#light_candle,
-#wish_message,
-#story {
-  display: none;
-}
-
-.cake-cover {
-  margin-top: 50px;
-}
-
-.message {
-  margin-top: 200px;
-  display: none;
-}
-
-.message p {
-  font-family: "Signika", sans-serif;
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #c4515c;
-  text-shadow: 2px 2px 2px #fff;
-  display: none;
-  font-weight: bold;
-}
-
-.btn-primary {
-  border-color: #466baf;
-  padding: 10px;
-  text-transform: uppercase;
-  font-family: "Signika", sans-serif;
-  font-weight: 700;
-  color: #fff;
-  background-color: #466baf;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-  border-color: #fff;
-  color: #fff;
-  background-color: #466baf;
-}
+  
+  .balloon-border {
+    position: fixed;
+    top: 100%;
+    opacity: 0.5;
+    z-index: 9999;
+  }
+  
+  .control-panel {
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0 10px 0;
+  }
+  
+  #play,
+  #bannar_coming,
+  #balloons_flying,
+  #cake_fadein,
+  #light_candle,
+  #wish_message,
+  #story {
+    display: none;
+  }
+  
+  .cake-cover {
+    margin-top: 50px;
+  }
+  
+  .message {
+    margin-top: 200px;
+    display: none;
+  }
+  
+  .message p {
+    font-family: "Signika", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #c4515c;
+    text-shadow: 2px 2px 2px #fff;
+    display: none;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    border-color: #466baf;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: "Signika", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #466baf;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .open .dropdown-toggle.btn-primary {
+    border-color: #fff;
+    color: #fff;
+    background-color: #466baf;
+  }
+  
